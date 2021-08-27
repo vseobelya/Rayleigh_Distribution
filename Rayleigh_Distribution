@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import math
+
+mu, sigma = 0, 1
+X = np.random.normal(mu, sigma, 10000)
+Y = np.random.normal(mu, sigma, 10000)
+
+sns.histplot(X)
+sns.histplot(Y)
+
+Z = np.sqrt(X*X+Y*Y)
+
+sns.histplot(Z)
